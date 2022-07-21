@@ -1,0 +1,34 @@
+{
+  "users": [],
+  "category":[
+    {
+      "id":1,
+      "name":"Điện thoại"
+    },
+    {
+      "id":2,
+      "name":"Máy tính bảng"
+    },
+    {
+      "id":3,
+      "name":"Âm thanh"
+    },
+    {
+      "id":4,
+      "name":"Laptop"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "san pham a ",
+      "originalPrice": "3",
+      "saleOffPrice": "2",
+      "category": "Laptop",
+      "feature": "  lorem a ",
+      "description": " lorem b ",
+      "image": "",
+      "shortDescription": "lorem c"
+    }
+  ]
+}

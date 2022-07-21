@@ -1,0 +1,37 @@
+class Product {
+   
+    name: string;
+    originalPrice: number;
+    image: string;
+    saleOffPrice: number;
+    category: string;
+    feature: string;
+    description: string;
+    shortDescription: string;
+    id?: string;
+    constructor(
+        
+        name: string,
+        originalPrice: number,
+        image: string,
+        category: string,
+        feature: string,
+        description: string,
+        saleOffPrice: number,
+        shortDescription: string,
+        id: string
+    ) {
+      
+        this.name = name;
+        this.originalPrice = originalPrice;
+        this.image = image;
+        this.saleOffPrice = saleOffPrice;
+        this.category = category;
+        this.feature = feature;
+        this.description = description;
+        this.shortDescription = shortDescription;
+        this.id = id;
+    }
+}
+
+export default Product
