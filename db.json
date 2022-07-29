@@ -1,34 +1,137 @@
 {
   "users": [],
-  "category":[
+  "category": [
     {
-      "id":1,
-      "name":"Điện thoại"
+      "id": 1,
+      "name": "Điện thoại"
     },
     {
-      "id":2,
-      "name":"Máy tính bảng"
+      "id": 2,
+      "name": "Máy tính bảng"
     },
     {
-      "id":3,
-      "name":"Âm thanh"
+      "id": 3,
+      "name": "Âm thanh"
     },
     {
-      "id":4,
-      "name":"Laptop"
+      "id": 4,
+      "name": "Laptop"
+    },
+    {
+      "id": 5,
+      "name": "Phụ kiện"
     }
   ],
   "products": [
     {
-      "id": 1,
-      "name": "san pham a ",
-      "originalPrice": "3",
-      "saleOffPrice": "2",
+      "id": 3,
+      "name": "iPhone 11 64GB I Chính hãng VN/A",
+      "originalPrice": 14.9,
+      "saleOffPrice": 10.5,
+      "category": "Điện thoại",
+      "feature": "    Màu sắc phù hợp cá tính - 6 màu sắc bắt mắt để lựa chọn\nHiệu năng mượt mà, ổn định - Chip A13, RAM 4GB  ",
+      "description": "  Apple luôn làm hài lòng tín đồ iFan với các dòng iPhone trong từng phân khúc giá. Đặc biệt, phiên bản iPhone 11 vừa ra mắt nhưng đã chiếm lĩnh được thị trường smartphone trên toàn thế giới với giá cả phải chăng. Cùng tìm hiểu chi tiết rõ hơn qua bài viết sau đây để có quyết định có nên mua hay không nhé!  ",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659116818/anhhtus/vuwmaska5lyrmqq6snbw.webp",
+      "shortDescription": "Bắt trọn khung hình - Camera kép hỗ trợ góc rộng, chế độ Night Mode\nYên tâm sử dụng - Kháng nước, kháng bụi IP68, kính cường lực Gorilla"
+    },
+    {
+      "name": "iPhone 13 Pro Max 128GB | Chính hãng VN/A",
+      "originalPrice": 32.3,
+      "saleOffPrice": 29,
+      "category": "Điện thoại",
+      "feature": "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao\nKhông gian hiển thị sống động - Màn hình 6.7\" Super Retina XDR độ sáng cao, sắc nét",
+      "description": "iPhone 13 Pro Max chắc chắn sẽ là chiếc smartphone cao cấp được quan tâm nhiều nhất trong năm 2021. Dòng iPhone 13 series được ra mắt vào ngày 14 tháng 9 năm 2021 tại sự kiện \"California Streaming\" diễn ra trực tuyến tương tự năm ngoái cùng với 3 phiên bản khác là iPhone 13, 13 mini và 13 Pro. Vậy điện thoại 13 Pro Max giá bao nhiêu? Có gì nổi bật? Cùng tìm hiểu ngay nhé!",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659116933/anhhtus/zc8d5sxswg2tbdma0fsw.webp",
+      "shortDescription": "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+      "id": 4
+    },
+    {
+      "name": " iPhone 13 128GB | Chính hãng VN/A",
+      "originalPrice": 19,
+      "saleOffPrice": 17,
+      "category": "Điện thoại",
+      "feature": "Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao\nKhông gian hiển thị sống động - Màn hình 6.1\" Super Retina XDR độ sáng cao, sắc nét",
+      "description": "Cuối năm 2020, bộ 4 iPhone 12 đã được ra mắt với nhiều cái tiến. Sau đó, mọi sự quan tâm lại đổ dồn vào sản phẩm tiếp theo – iPhone 13. Vậy iP 13 sẽ có những gì nổi bật, hãy tìm hiểu ngay sau đây nhé!",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117008/anhhtus/vqpjltb1tleuirv2ykec.webp",
+      "shortDescription": "Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút",
+      "id": 5
+    },
+    {
+      "name": "iPhone 12 Pro Max 128GB I Chính hãng VN/A",
+      "originalPrice": 25,
+      "saleOffPrice": 21,
+      "category": "Điện thoại",
+      "feature": "Mạnh mẽ, siêu nhanh với chip A14, RAM 6GB, mạng 5G tốc độ cao\nRực rỡ, sắc nét, độ sáng cao - Màn hình OLED cao cấp, Super Retina XDR hỗ trợ HDR10, Dolby Vision",
+      "description": "Cứ mỗi năm, đến dạo cuối tháng 8 và gần đầu tháng 9 thì mọi thông tin sôi sục mới về chiếc iPhone mới lại xuất hiện. Apple năm nay lại ra thêm một chiếc iPhone mới với tên gọi mới là iPhone 12 Pro Max, đây là một dòng điện thoại mới và mạnh mẽ nhất của nhà Apple năm nay. Mời bạn tham khảo thêm một số mô tả sản phẩm bên dưới để bạn có thể ra quyết định mua sắm.",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117038/anhhtus/g4ke0zgscxffr39cq6qd.webp",
+      "shortDescription": "Bền bỉ vượt trội - Kháng nước, kháng bụi IP68, mặt lưng Ceramic Shield",
+      "id": 6
+    },
+    {
+      "name": "Apple Macbook Air M2 2022 8GB 256GB I Chính hãng Apple Việt Nam",
+      "originalPrice": 32000000,
+      "saleOffPrice": 29000000,
       "category": "Laptop",
-      "feature": "  lorem a ",
-      "description": " lorem b ",
-      "image": "",
-      "shortDescription": "lorem c"
+      "feature": "\n\n\nLoại card đồ họa : Apple M2\n\n8 nhân GPU, 16 nhân Neural Engine\nDung lượng RAM8GB",
+      "description": "Sau thành công của dòng Macbook M1 thì Apple lại chuẩn bị mang đến cho người dùng dòng sản phẩm Macbook Air 2022 với những điểm nâng cấp đáng chú ý. Bên cạnh đó mức giá thành lại thấp hơn so với hiện tại, chắc chắn rằng các iFan đang rất nóng lòng chờ đón sự xuất hiện của dòng sản phẩm mới này.",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117154/anhhtus/i6bgyv1w6qb4ixucfury.jpg",
+      "shortDescription": "Loại card đồ họa : Apple M2",
+      "id": 7
+    },
+    {
+      "name": "Máy chiếu di động thông minh Wanbo T6 Max Full HD",
+      "originalPrice": 7000000,
+      "saleOffPrice": 6000000,
+      "category": "Phụ kiện",
+      "feature": "Thiết kế tiện lợi phù hợp với đa dạng mục đích",
+      "description": "Máy chiếu di động thông minh Wanbo T6 Max Full HD là lựa chọn tuyệt vời cho nhiều mục đích như thuyết trình hay giải trí tại nhà. Với những ưu điểm vượt trội như giá rẻ, khả năng lưu trữ tốt, kết nối không dây tiện lợi,... thiết bị là gợi ý hoàn hảo dành cho những ai có khả năng tài chính không quá cao nhưng muốn dùng máy chiếu.",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117381/anhhtus/rgj4potjmbyou9xog7af.jpg",
+      "shortDescription": "sản phẩm này có dạng hình lập phương với ống lens ở phía trước. Máy có gam màu trắng chủ đạo và kiểu dáng nhỏ gọn đi cùng với một quai xách phía trên",
+      "id": 8
+    },
+    {
+      "name": "Tai nghe Bluetooth Samsung Galaxy Buds Live",
+      "originalPrice": 6000000,
+      "saleOffPrice": 5000000,
+      "category": "Phụ kiện",
+      "feature": "Chống ồn chủ động ANC khử tiếng ồn nhưng không lấn át các âm thanh quan trọng\nMàn loa 12mm tinh chỉnh bởi AKG cho chất âm sáng rõ",
+      "description": "Tích hợp Softify,chạm và giữ trong một giây tất cả danh sách nhạc sẽ được đồng bộ\n6 tiếng nghe nhạc,đi kèm hộp sạc cho thời gian sử dụng lên đến 21 tiếng\nHỗ trợ sạc không dây,có thể sử dụng điện thoại để sạc cho tai nghe",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117440/anhhtus/sxxhphzye0xns3adtu2w.webp",
+      "shortDescription": "3 mic lọc tiếng ồn cho chất lượng đàm thoại trong trẻo\n",
+      "id": 9
+    },
+    {
+      "name": "Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam",
+      "originalPrice": 25000000,
+      "saleOffPrice": 22000000,
+      "category": "Laptop",
+      "feature": "Hiệu năng vượt trội - Cân mọi tác vụ từ word, exel đến chỉnh sửa ảnh trên các phần mềm như AI, PTS\nĐa nhiệm mượt mà - Ram 8GB cho phép vừa mở trình duyệt để tra cứu thông tin, vừa làm việc trên phần mềm",
+      "description": "Là dòng sản phẩm có thiết kế mỏng nhẹ, sang trọng và tinh tế cùng với đó là giá thành phải chăng nên MacBook Air đã thu hút được đông đảo người dùng yêu thích và lựa chọn. Một trong những phiên bản mới nhất mà khách hàng không thể bỏ qua khi đến với CellphoneS đó là MacBook Air M1. Dưới đây là chi tiết về thiết kế, cấu hình của máy",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117465/anhhtus/yoncqjzawk0p25t7f7zq.webp",
+      "shortDescription": "Thiết kế sang trọng - Nặng chỉ 1.29KG, độ dày 16.1mm. Tiện lợi mang theo mọi nơi",
+      "id": 10
+    },
+    {
+      "name": "Macbook Pro 14 inch 2021 | Chính hãng Apple Việt Nam",
+      "originalPrice": 45000000,
+      "saleOffPrice": 43000000,
+      "category": "Laptop",
+      "feature": "Hiệu năng vượt trội - Cân mọi tác vụ từ công việc, đồ họa cho đến những tựa game nặng\nĐa nhiệm mượt mà - RAM 16 GB giải quyết khối lượng công việc “nặng đô” một cách nhanh chóng và ấn tượng",
+      "description": "Kế thừa những tinh hoa từ đời MacBook tốt nhất cùng với những nâng cấp đáng kể trong nhiều năm qua, Macbook Pro 14 inch dự kiến sẽ là mẫu laptop làm cho giới công nghệ \"phát sốt\", cũng như là cỗ máy xử lý công việc tối ưu hiệu quả.",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117559/anhhtus/vftkj49mgcq2at0mnqo5.webp",
+      "shortDescription": "Màn hình 14.2 inch Liquid Retina XDR (3024 x 1964) chất lượng hiển thị vô cùng sắc nét",
+      "id": 11
+    },
+    {
+      "name": "Chuột Apple Magic Mouse 2 | Chính hãng Apple Việt Nam",
+      "originalPrice": 5000000,
+      "saleOffPrice": 4500000,
+      "category": "Phụ kiện",
+      "feature": "Thiết kế bằng khung kim loại hiện đại, mỏng nhẹ đem lại cảm giác sang trọng và cao cấp\nToàn bộ thân chuột sử dụng cảm ứng hoàn toàn hỗ trợ thao tác nhỏ như cuộn trang, đa nhiệm màn hình,…",
+      "description": "Trong các thao tác công việc hằng ngày, đặc biệt là khi làm việc trên laptop hay trên chiếc máy iMac, thì chiếc chuột máy tính không dây Apple Magic Mouse 2 là một điều cần thiết để các thao tác được nhanh nhẹn hơn và linh hoạt hơn.",
+      "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117590/anhhtus/vqq1c62qzzfaevhmgpxp.jpg",
+      "shortDescription": "Độ phân giải của cảm biến là 1300 DPI, giúp thao tác rê chuột mượt mà hơn",
+      "id": 12
     }
   ]
 }

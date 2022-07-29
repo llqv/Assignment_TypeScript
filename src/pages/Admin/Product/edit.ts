@@ -32,7 +32,7 @@ const EditProductPage = {
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
                 clip-rule="evenodd" />
             </svg>
-            <input id="input-file" type="file" class="hidden" accept="image/jpg, image/jpeg, image/png" />
+            <input id="input-file" type="file" class="hidden" accept="image/jpg, image/jpeg, image/png, image/webp" />
           </label>
           <div class="text-2xl font-semibold mt-4">Thêm ảnh</div>
           <img id="preview-image" />
@@ -51,11 +51,11 @@ const EditProductPage = {
         <div class="flex">
         <div class="w-1/2 font-semibold mt-4">
           <h3 class="mx-4">Giá gốc</h3>
-          <input class="border border-inherit rounded-md h-12 mx-4 text-xl font-semibold " type="text" value="${data.originalPrice}" id="originalPrice">
+          <input class="border border-inherit rounded-md h-12 mx-4 text-xl font-semibold " type="number" value="${data.originalPrice}" id="originalPrice">
         </div>
         <div class="w-1/2 font-semibold mt-4">
         <h3 class="mx-4">Giá khuyến mại</h3>
-          <input class="border border-inherit rounded-md h-12 mx-4 text-xl font-semibold" type="text" value="${data.saleOffPrice}" id="saleOffPrice">
+          <input class="border border-inherit rounded-md h-12 mx-4 text-xl font-semibold" type="number" value="${data.saleOffPrice}" id="saleOffPrice">
         </div>
         </div>
         <div class="font-semibold mt-4 mx-auto">
