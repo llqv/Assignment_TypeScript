@@ -1,40 +1,87 @@
-const signup = {
-    render: async () =>{
+import validator from 'validator'
+import { register } from '../../../api/users'
+
+const Signup = {
+    render: async () => {
         return /*html*/`
-        <!-- Sign Up -->
-        <div class="h-full p-4">
-            <div class="grid grid-cols-3 w-[800px] mx-auto border border-gray my-[200px] h-[508px] bg-slate rounded-2xl">     
-                <div class="col-span-2">
-                    <div class="pt-36 mx-4">
-                    <div class="">
-                        <label class="text-xl font-semibold" for="">Email</label>
-                        <br>
-                        <input class="h-[40px] w-[400px] border border-black rounded-md" type="password">
-                    </div>
-                    <div class="mt-4">
-                        <label class="text-xl font-semibold" for="">Số điện thoại</label>
-                        <br>
-                        <input class="h-[40px] w-[400px] border border-black rounded-md" type="text">
-                    </div>
-                    <div class="mt-4">
-                        <label class="text-xl font-semibold" for="">Mật khẩu</label>
-                        <br>
-                        <input class="h-[40px] w-[400px] border border-black rounded-md" type="text">
-                    </div>
+        <div class="bg-gray-100 h-[100vh] flex justify-center items-center">
+            <div class="w-[800px] bg-white flex">
+            <div class="w-[500px] flex-none p-[45px]">
+                <div class="">
+                    <label class="block text-lg font-medium text-gray-700">Email</label>
+                    <input id="email" class="block border w-full rounded-sm border-gray-200 mt-2 p-1 outline-none" type="text" >
+                    <div class="text-red-500 text-sm hidden error"></div>
                 </div>
-                <button class="w-[400px] h-[48px] border bg-[#FF424E] text-white rounded-md mx-4 mt-2">Đăng ký</button>
-                <div class="text-lg mt-2 mx-32">
-                    <label for="">Hoặc đăng nhập bằng</label>
+                <div class="">
+                    <label class="block text-md font-medium text-gray-700">Số điện thoại</label>
+                    <input id="phone" class="block border w-full rounded-sm border-gray-200 mt-2 p-1 outline-none" type="text" >
+                    <div class="text-red-500 text-sm error"></div>
                 </div>
+                <div class="">
+                    <label class="block text-md font-medium text-gray-700">Mật khẩu</label>
+                    <input id="password" class="block border w-full rounded-sm border-gray-200 mt-2 p-1 outline-none" type="password" >
+                    <div class="text-red-500 text-sm error"></div>
                 </div>
-                <div class="bg-gray-100">
-                    <img class="w-2/4 mx-auto py-44" src="https://cdn.sforum.vn/sforum/wp-content/uploads/2021/06/logo-s.png" alt="">
-                </div>
+                <button id="btn-submit" class="block mt-2 py-4 text-center bg-red-600 text-white w-full">Đăng kí</button>
             </div>
-            
+            <div class="grow p-[55px] bg-gray-50 flex justify-center items-center">
+                <img src="/images/logo.png" alt="">
             </div>
-            <!-- End Sign Up -->
+            </div>
+        </div>
         `
+    },
+    afterRender: async () => {
+        // Khai bao
+        const submit = document.querySelector('#btn-submit')
+        const formField = [
+            "email", "phone", "password"
+        ]
+        const validate = function() {
+            let data: any = {};
+            let error = false
+            const errors = document.querySelectorAll('.error')
+            errors.forEach(e => {
+                e.classList.add('hidden')
+            })
+            formField.forEach(field => {
+                const element = document.getElementById(field)
+
+                if(element?.value.length == 0) {
+                    addError(element, "Trường dữ liệu bắt buộc")
+                    error = true;
+                }
+
+                if(field == "email") {
+                    if(!validator.isEmail(element?.value)) {
+                        addError(element, "Định dạng email sai")
+                        error = true
+                    }
+                }
+                data[field] = element?.value
+            })
+            return {error, data}
+        }
+
+        const addError = function(element: HTMLElement, message: string) {
+            let temp = element.nextElementSibling;
+            temp.classList.remove("hidden");
+            temp.textContent = message;
+            // element.style.borderColor = "red";
+        }
+
+        submit.onclick = async function () {
+            const {error, data} = validate()
+            if(!error) {
+                try {
+                    const res = await register(data)
+                    alert("Đăng kí thành công")
+                } catch(error) {
+                    alert(error.message)
+                }
+            }
+        }
     }
 }
-export default signup
+
+export default Signup 

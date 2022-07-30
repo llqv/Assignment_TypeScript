@@ -132,6 +132,81 @@
       "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117590/anhhtus/vqq1c62qzzfaevhmgpxp.jpg",
       "shortDescription": "Độ phân giải của cảm biến là 1300 DPI, giúp thao tác rê chuột mượt mà hơn",
       "id": 12
+    },
+    {
+      "name": "",
+      "originalPrice": 0,
+      "saleOffPrice": 0,
+      "category": "Điện thoại",
+      "feature": "",
+      "description": "",
+      "image": "",
+      "shortDescription": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "originalPrice": 0,
+      "saleOffPrice": 0,
+      "category": "Điện thoại",
+      "feature": "",
+      "description": "",
+      "image": "",
+      "shortDescription": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "originalPrice": 0,
+      "saleOffPrice": 0,
+      "category": "Điện thoại",
+      "feature": "",
+      "description": "",
+      "image": "",
+      "shortDescription": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "originalPrice": 0,
+      "saleOffPrice": 0,
+      "category": "Điện thoại",
+      "feature": "",
+      "description": "",
+      "image": "",
+      "shortDescription": "",
+      "id": 16
+    },
+    {
+      "name": "",
+      "originalPrice": 0,
+      "saleOffPrice": 0,
+      "category": "Điện thoại",
+      "feature": "",
+      "description": "",
+      "image": "",
+      "shortDescription": "",
+      "id": 17
+    },
+    {
+      "name": "",
+      "originalPrice": 0,
+      "saleOffPrice": 0,
+      "category": "Điện thoại",
+      "feature": "",
+      "description": "",
+      "image": "",
+      "shortDescription": "",
+      "id": 18
+    },
+    {
+      "shortDescription": "1",
+      "name": "1",
+      "price": "1",
+      "sale": "1",
+      "feature": "1",
+      "description": "1",
+      "id": 19
     }
   ]
 }

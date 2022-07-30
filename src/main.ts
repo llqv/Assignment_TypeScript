@@ -11,12 +11,12 @@ import card from './pages/Home/card'
 const router = new Navigo('/', {linksSelector: "a"})
 
 export type ComponentBase = {
-  render: () => Promise<string>;
+  render: (id:any) => Promise<string>;
   afterRender?: () => void
 }
 
-const print = async (component: ComponentBase, params?: any) => {
-  document.getElementById('app').innerHTML = await component.render()
+const print = async (component: ComponentBase,id:ComponentBase, params?: any) => {
+  document.getElementById('app').innerHTML = await component.render(id)
   if(component.afterRender) {
     component.afterRender(id)
   }
@@ -41,8 +41,10 @@ router.on({
   "/admin/products/add": () => {
     print(AddProductPage)
   },
-  "/admin/products/edit:id": (data: any) => {
+  "/admin/product/edit/:id": (data: any) => {
     const id = +data.data.id
+    console.log(id);
+    
     print(EditProductPage, id)
   },
 })

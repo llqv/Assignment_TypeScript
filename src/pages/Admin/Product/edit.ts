@@ -9,6 +9,8 @@ import category from '../../../model/categoty'
 
 const EditProductPage = {
 	render: async (id: any) => {
+    console.log(id);
+    
 		const res = await readProducts(id)
 		const data:Product = res.data
 		console.log(data)
