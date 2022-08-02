@@ -15,8 +15,8 @@ export type ComponentBase = {
   afterRender?: () => void
 }
 
-const print = async (component: ComponentBase, params?: any) => {
-  document.getElementById('app').innerHTML = await component.render()
+const print = async (component: ComponentBase,id:ComponentBase, params?: any) => {
+  document.getElementById('app').innerHTML = await component.render(id)
   if(component.afterRender) {
     component.afterRender(id)
   }
@@ -41,7 +41,7 @@ router.on({
   "/admin/products/add": () => {
     print(AddProductPage)
   },
-  "/admin/products/edit:id": (data: any) => {
+  "/admin/products/edit/:id": (data: any) => {
     const id = +data.data.id
     print(EditProductPage, id)
   },

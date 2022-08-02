@@ -123,15 +123,44 @@
       "id": 11
     },
     {
+      "id": 12,
       "name": "Chuột Apple Magic Mouse 2 | Chính hãng Apple Việt Nam",
-      "originalPrice": 5000000,
-      "saleOffPrice": 4500000,
-      "category": "Phụ kiện",
-      "feature": "Thiết kế bằng khung kim loại hiện đại, mỏng nhẹ đem lại cảm giác sang trọng và cao cấp\nToàn bộ thân chuột sử dụng cảm ứng hoàn toàn hỗ trợ thao tác nhỏ như cuộn trang, đa nhiệm màn hình,…",
-      "description": "Trong các thao tác công việc hằng ngày, đặc biệt là khi làm việc trên laptop hay trên chiếc máy iMac, thì chiếc chuột máy tính không dây Apple Magic Mouse 2 là một điều cần thiết để các thao tác được nhanh nhẹn hơn và linh hoạt hơn.",
       "image": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1659117590/anhhtus/vqq1c62qzzfaevhmgpxp.jpg",
-      "shortDescription": "Độ phân giải của cảm biến là 1300 DPI, giúp thao tác rê chuột mượt mà hơn",
-      "id": 12
+      "originalPrice": "45000000",
+      "saleOffPrice": "34000000",
+      "description": "Trong các thao tác công việc hằng ngày, đặc biệt là khi làm việc trên laptop hay trên chiếc máy iMac, thì chiếc chuột máy tính không dây Apple Magic Mouse 2 là một điều cần thiết để các thao tác được nhanh nhẹn hơn và linh hoạt hơn.",
+      "feature": "Thiết kế bằng khung kim loại hiện đại, mỏng nhẹ đem lại cảm giác sang trọng và cao cấp\nToàn bộ thân chuột sử dụng cảm ứng hoàn toàn hỗ trợ thao tác nhỏ như cuộn trang, đa nhiệm màn hình,…",
+      "shortDescription": "Màn hình 14.2 inch Liquid Retina XDR (3024 x 1964) chất lượng hiển thị vô cùng sắc nét",
+      "category": "1"
+    },
+    {
+      "id": 13,
+      "name": "rerree",
+      "image": "http://127.0.0.1:3000/admin/products/edit/13",
+      "description": "gfgf",
+      "feature": "43",
+      "category": "1"
+    },
+    {
+      "name": "vu le vu",
+      "image": "http://res.cloudinary.com/local12/image/upload/v1659421397/jxctopbfwplqbfmsvfl7.webp",
+      "originalPrice": "3200000",
+      "saleOffPrice": "2100000",
+      "description": "fd",
+      "shortDescription": "dsd",
+      "feature": "fd",
+      "category": "1",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "name": "iphone 13",
+      "image": "http://res.cloudinary.com/local12/image/upload/v1659438758/dtlmhzduqblh0meadnab.webp",
+      "originalPrice": "23000000",
+      "saleOffPrice": "",
+      "description": "lorem b",
+      "feature": "lorem a",
+      "category": "1"
     }
   ]
 }

@@ -15,7 +15,10 @@ const AdminPage = {
         const cate:category[] = resone.data
         return /*html*/`
         ${AdminHeader.render()}
-        ${Sidebar.render()}
+        <div class="flex mt-4 divide-x">
+            <div class="w-[250px] flex-none">
+                ${Sidebar.render()}
+            </div>
             <div class="grow px-4">
                 <div class="flex justify-between">
                     <div>

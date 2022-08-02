@@ -10,7 +10,6 @@ class Product {
     shortDescription: string;
     id?: string;
     constructor(
-        
         name: string,
         originalPrice: number,
         image: string,
