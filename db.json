@@ -1,5 +1,25 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$PyvvGu5mCFQvaF1QqV44ce9lY6fRfnvD8INkzJ114BI1l8r5b6HJi",
+      "phone": "0879588097",
+      "role": 1,
+      "id": 1
+    },
+    {
+      "email": "lequangvu070501@gmail.com",
+      "password": "$2a$10$JQ9mQ23MtIasnefTZc.vQu3iwJCoktJSJa7VDSaI78zYt6aHE/cau",
+      "phone": "0879588097",
+      "id": 2
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "$2a$10$jtdbzMg8TLLbwulrycGvDermxQ0Y63pzV3CXtR6B4pTmyzyqqKPw.",
+      "phone": "0879588097",
+      "id": 3
+    }
+  ],
   "category": [
     {
       "id": 1,
@@ -134,33 +154,15 @@
       "category": "1"
     },
     {
-      "id": 13,
-      "name": "rerree",
-      "image": "http://127.0.0.1:3000/admin/products/edit/13",
-      "description": "gfgf",
-      "feature": "43",
-      "category": "1"
-    },
-    {
-      "name": "vu le vu",
-      "image": "http://res.cloudinary.com/local12/image/upload/v1659421397/jxctopbfwplqbfmsvfl7.webp",
-      "originalPrice": "3200000",
-      "saleOffPrice": "2100000",
-      "description": "fd",
-      "shortDescription": "dsd",
-      "feature": "fd",
+      "name": "iPhone 12 64GB I Chính hãng VN/A",
+      "image": "http://res.cloudinary.com/local12/image/upload/v1660025734/l7qpyrvdjsjsmqd7wgou.jpg",
+      "originalPrice": "19",
+      "saleOffPrice": "15",
+      "description": "Đánh giá iPhone 12 - Siêu phẩm khẳng định đẳng cấp\nPhiên bản iPhone 12 thường sở hữu nhiều điểm mới đặc biệt là về thiết kế và cấu hình so với các thế hệ trước đó.\n\nThiết kế \niPhone 12 gây ấn tượng với người dùng bởi thiết kế vuông vức quen thuộc, đây là thiết kế đã từng xuất hiện trên thế hệ iPhone 5 trước đó. Điện thoại được hoàn thiện mỏng hơn với cụm camera lớn hơn.\n\nĐặc biệt, máy được trang bị một khung viền thép không gỉ. Mặt lưng điện thoại iPhone 12 được trang bị một mặt kính Ceramic Shield bóng bẩy, gây được sự chú ý của người đối diện.\n\nVề kích thước cụ thể, máy có thông số từng cạnh lần lượt là 146.7 x 71.5 x 7.4 mm cùng cân nặng khoảng 164g. Tổng thể, máy khá mỏng nhẹ thích hợp với cả người dùng nam và nữ cũng như thích hợp với nhiều kích thước tay khác nhau.",
+      "shortDescription": "Dù Apple vừa giới thiệu dòng điện thoại iPhone 13 series tuy nhiên iPhone 12 vẫn đang là một trong những sự lựa chọn hàng đầu ở thời điểm hiện tại.",
+      "feature": "Mạnh mẽ, siêu nhanh với chip A14, RAM 4GB, mạng 5G tốc độ cao\nRực rỡ, sắc nét, độ sáng cao - Màn hình OLED cao cấp, Super Retina XDR hỗ trợ HDR10, Dolby Vision\nChụp đêm ấn tượng - Night Mode cho 2 camera, thuật toán Deep Fusion, Smart HDR 3\nBền bỉ vượt trội - Kháng nước, kháng bụi IP68, mặt lưng Ceramic Shield",
       "category": "1",
-      "id": 14
-    },
-    {
-      "id": 15,
-      "name": "iphone 13",
-      "image": "http://res.cloudinary.com/local12/image/upload/v1659438758/dtlmhzduqblh0meadnab.webp",
-      "originalPrice": "23000000",
-      "saleOffPrice": "",
-      "description": "lorem b",
-      "feature": "lorem a",
-      "category": "1"
+      "id": 21
     }
   ]
 }

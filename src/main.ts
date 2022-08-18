@@ -7,11 +7,12 @@ import EditProductPage from './pages/Admin/Product/edit'
 import signin from './pages/Home/Auth/signin'
 import signup from './pages/Home/Auth/signup'
 import card from './pages/Home/card'
+import DetailProduct from './pages/Home/detailPages'
 
 const router = new Navigo('/', {linksSelector: "a"})
 
 export type ComponentBase = {
-  render: () => Promise<string>;
+  render: (id:any) => Promise<string>;
   afterRender?: () => void
 }
 
@@ -26,6 +27,10 @@ router.on({
   "/": () => {
     print(HomePage)
   },
+  "/products/:id": (data: any) => {
+    const id = +data.data.id
+    print(DetailProduct, id)
+},
   "/signin": () => {
     print(signin)
   },

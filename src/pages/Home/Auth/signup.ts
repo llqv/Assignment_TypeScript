@@ -1,5 +1,5 @@
 import validator from 'validator'
-import { register } from '../../../api/users';
+import { signup } from '../../../api/auth'
 
 const Signup = {
     render: async () => {
@@ -74,8 +74,9 @@ const Signup = {
             const {error, data} = validate()
             if(!error) {
                 try {
-                    const res = await register(data)
+                    const res = await signup(data)
                     alert("Đăng kí thành công")
+                    location.href="/signin"
                 } catch(error) {
                     alert(error.message)
                 }

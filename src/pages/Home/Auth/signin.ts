@@ -1,4 +1,5 @@
 import validator from 'validator'
+import { signin } from '../../../api/auth';
 import { register } from '../../../api/users';
 
 const Signup = {
@@ -17,7 +18,7 @@ const Signup = {
                     <input id="password" class="block border w-full rounded-sm border-gray-200 mt-2 p-1 outline-none" type="password" >
                     <div class="text-red-500 text-sm error"></div>
                 </div>
-                <button id="btn-submit" class="block mt-2 py-4 text-center bg-red-600 text-white w-full">Đăng kí</button>
+                <button id="btn-submit" class="block mt-2 py-4 text-center bg-red-600 text-white w-full">Đăng nhập</button>
             </div>
             <div class="grow p-[55px] bg-gray-50 flex justify-center items-center">
                 <img src="/images/logo.png" alt="">
@@ -69,8 +70,22 @@ const Signup = {
             const {error, data} = validate()
             if(!error) {
                 try {
-                    const res = await register(data)
-                    alert("Đăng kí thành công")
+                    const res = await signin(data)
+                    alert("Đăng nhập thành công")
+                    localStorage.setItem('user', JSON.stringify(res.data.user))
+                    if (localStorage.getItem("user")) {
+                        try {
+                            if (res.data.user.role == 1) {
+                                location.href = "/admin"
+                            }
+                            else {
+                                location.href = "/"
+                            }
+                        } catch (error) {
+                            alert("Đăng nhập thất bại")
+                        }
+
+                    }
                 } catch(error) {
                     alert(error.message)
                 }

@@ -1,4 +1,5 @@
 import { getProducts } from "../../api/product"
+import Footer from "../../components/footer"
 import header from "../../components/Header/User"
 import Product from "../../model/product"
 
@@ -6,6 +7,8 @@ const HomePage = {
     render: async () => {
       const res = await getProducts()
       const data: Product[] = res.data
+      console.log(data);
+      
         return /*html*/`
         ${header.render()}
         <!-- Navbar -->
@@ -66,8 +69,8 @@ const HomePage = {
           SẢN PHẨM MỚI NHẤT
         </div>
         <div class="grid grid-cols-5 gap-4 mx-64 mt-4">
-        ${data.map((p)=>/*html*/`
-          <a href="#">
+        ${data.map((p: Product)=>/*html*/`
+          <a href="/products/${p.id}">
             <div class="p-3 drop-shadow-md border rounded-md w-[310px] h-[480px] mt-14 mb-8">
               <img class="p-1 w-[230px] h-[235px] mx-auto" src="${p.image}" alt="">
               <h1 class="font-semibold">${p.name}</h1>
@@ -105,7 +108,16 @@ const HomePage = {
           </a>
         </div>
         <!-- Body -->
+        ${Footer.render()}
         `
+    },
+    afterRender:()=>{
+      const logout = document.querySelector("#logout")
+      logout?.addEventListener('click', function () {
+        localStorage.removeItem('user')
+        alert("Đăng xuất thành công")
+        location.href = "/signin"
+      })
     }
 }
 

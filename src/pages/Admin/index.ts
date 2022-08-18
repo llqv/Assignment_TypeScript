@@ -1,19 +1,62 @@
-import { getcategory } from "../../api/category"
-import { getProducts } from "../../api/product"
+import { infoUser } from "../../api/auth"
+import { categorybyId, getcategory } from "../../api/category"
+import { getProducts, Listbycate } from "../../api/product"
 import AdminHeader from "../../components/Header/Admin"
 import Sidebar from "../../components/Sidebar"
 import category from "../../model/categoty"
 import Product from "../../model/product"
+import reRender from "../../ultilities/reRender"
+
 
 const AdminPage = {
     render: async () => {
-        const res = await getProducts()
-        const data: Product[] = res.data
-        console.log(data)
+        
+        var data
 
         const resone = await getcategory()
-        const cate:category[] = resone.data
-        return /*html*/`
+        const cate: category[] = resone.data
+        var key
+        var cateID
+        const query = window.location.search
+        const urlParams = new URLSearchParams(query)
+        const rescategory = urlParams.get('category')
+     
+        if (rescategory) {
+            data = await Listbycate(rescategory)
+            console.log(data.data);
+            
+            cateID = await categorybyId(rescategory)
+        } else {
+            data= await getProducts()
+            key = await getcategory()
+        }
+        const res = data.data
+        let reskey = data.data
+        const cates = await getcategory()
+        
+
+        if (localStorage.getItem("user")) {
+            try {
+                const result =JSON.parse(localStorage.getItem("user"))
+                if (result.role == 0) {
+                    window.location.href = "/";
+                }            }
+                catch (error) {
+                   alert("Bạn không có quyền truy cập")
+                   localStorage.removeItem("user")
+                   window.location.href = "/signin"
+               }
+   
+           
+           }
+           else {
+               alert("Bạn không có quyền truy cập")
+               localStorage.removeItem("user")
+               window.location.href = "/signin"
+           }
+      
+        
+                return /*html*/`
         ${AdminHeader.render()}
         <div class="flex mt-4 divide-x">
             <div class="w-[250px] flex-none">
@@ -33,12 +76,11 @@ const AdminPage = {
                 </div>
                 <div class="font-semibold mt-4 mx-auto">
                 <h3 class="mx-4">Danh mục</h3>
-                  <select class="w-[450px] border border-inherit rounded-md h-12 mx-4 text-xl font-semibold" value="category" id="category">
-                  ${
-                   cate.map((category, index) => (
-                    `<option key=${index}>${category.name}</option>`
-                   )) 
-                  }             
+                  <select class="w-[450px] border border-inherit rounded-md h-12 mx-4 text-xl font-semibold" id="cleanse">
+                  ${cate.map((category, index) => 
+                    `<option value=${index}>${category.name}</option>`
+                )
+                    }          
                 </select>
               </div>
                 <table class="w-full table-auto border mt-8">
@@ -54,7 +96,7 @@ const AdminPage = {
                     </tr>
                     </thead>
                     <tbody>
-                    ${data.map((p, index) => /*html*/`
+                    ${res.map((p:Product, index) => /*html*/`
                         <tr>
                             <td class="border text-center h-12">${index + 1}</td>
                             <td class="border text-center h-12">${p.name}</td>
@@ -81,7 +123,32 @@ const AdminPage = {
             </div>
         </div>
         `
+
+
+
+    },
+    afterRender : (id) => {
+        const cleanse = document.getElementById('cleanse')
+        cleanse?.addEventListener('change', async function(e) 
+        {
+        const target = e.target.value
+        console.log(target);
+        
+        if (target == 0) {
+            history.replaceState(null, null, null)
+            location.href="/admin"
+        }    
+        else{
+            history.replaceState(null, null, `?category=${e.target.value}`)
+            reRender('#app', AdminPage)  
+        }
+        })
     }
+   
 }
+
+
+
+
 
 export default AdminPage

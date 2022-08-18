@@ -8,3 +8,4 @@ const reRender = async (element: string, component: ComponentBase) => {
         await component.afterRender()
     }
 }
+export default reRender
