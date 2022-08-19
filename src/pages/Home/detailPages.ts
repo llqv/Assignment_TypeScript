@@ -128,8 +128,15 @@ const DetailProduct = {
             const cart = JSON.parse(localStorage.getItem("cart"))
             if (cart) {
                 const index = cart.findIndex(x => x.id == data.id)
-                if (index === -1) {
-                    cart.push(data)
+             if (index === -1 ) {
+                cart.push({...data,quality : 1})
+             }
+                else {
+                   console.log(cart[index]);
+                   
+                    cart[index] = {
+                        ...data, quality: Number(cart[index].quality) + 1
+                    }
                 }
                 localStorage.setItem("cart", JSON.stringify([...cart]))
             } else {

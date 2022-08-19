@@ -39,7 +39,7 @@ const card = {
                             <label class="text-xl font-semibold" for="">${item.name}</label><br>
                             <label class="text-red-500 font-medium" for="">${item.saleOffPrice}</label><br>
                             <label class="font-normal" for="">
-                                Chọn số lượng <input class="border border-black w-[100px] mx-4" type="number">
+                                Chọn số lượng <input class="text-center border border-black w-[100px] mx-4" type="number" min="0" value="${item.quality}">
                             </label>
                         </div>
                         <div class="w-[345px] h-[140px] bg-gray-200 border border-solid rounded-md mx-auto mt-4 font-normal">
@@ -156,12 +156,12 @@ const card = {
 },
 afterRender: () => {
 
-        const logout = document.querySelector("#logout")
-        logout?.addEventListener('click', function () {
-          localStorage.removeItem('user')
-          alert("Đăng xuất thành công")
-          location.href = "/signin"
-        })
+const logout = document.querySelector('#logout')
+logout?.addEventListener("click", function(){
+    localStorage.removeItem('user')
+    alert("Dang xuat thanh cong")
+    location.href = "/signin"
+})
 
     const btns = document.querySelectorAll(".container #del")
 
